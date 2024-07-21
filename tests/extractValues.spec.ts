@@ -1,4 +1,3 @@
-import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing'
 import { expect, test } from '@playwright/test'
 
 test.beforeEach(async({page}) => {
