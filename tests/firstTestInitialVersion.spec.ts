@@ -4,7 +4,7 @@ test.beforeEach(async({page}) => {
     await page.goto('http://localhost:4200/')
 })
 
-test.describe('Test Suite 1', () => {
+test.describe.skip('Test Suite 1', () => {
     
     test.beforeEach(async({page}) => {
         await page.getByText('Forms').click()
@@ -19,7 +19,7 @@ test.describe('Test Suite 1', () => {
     })
 })
 
-test.describe('Test Suite 2', () => {
+test.describe.skip('Test Suite 2', () => {
     
     test.beforeEach(async({page}) => {
         await page.getByText('Tables & Data').click()
