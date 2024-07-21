@@ -9,10 +9,11 @@ test.beforeEach(async({page}) => {
 test('Assertions', async({page}) => {
     const basicFormButton = page.locator('nb-card').filter({hasText: "Basic form"}).locator('button')
 
-    /* There are 2 types of assestions in Playwright:
-        1. General assertions (also known as Generic assertions) - those are executed instantly, no wait time
-        2. Locator assertions - those have a wait time up to 5 seconds for the element to be available
-    */
+    /** 
+     * There are 2 types of assestions in Playwright:
+     *      1. General assertions (also known as Generic assertions) - those are executed instantly, no wait time
+     *      2. Locator assertions - those have a wait time up to 5 seconds for the element to be available
+     */ 
 
     // General (Generic) assertions
     const value = 5
