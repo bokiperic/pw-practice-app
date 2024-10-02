@@ -48,6 +48,8 @@ test('User facing locators', async({page}) => {
 
     await page.getByPlaceholder('Jane Doe').click()
 
+    // getByText - is looking for a partial match, not the exact, so if you searching for '1' in calendar it will return 1, 10, 11, 12, 13, ...
+    // Fix for this is to use exact:true, example -> .getByText('1', {exact: true}) - only '1' will be found
     await page.getByText('Using the Grid').click()
 
     await page.getByTitle('IoT Dashboard').click()
